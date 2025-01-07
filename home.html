@@ -1,0 +1,138 @@
+
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Poppins, Helvetica, sans-serif;
+            background-color: pink;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: pink;
+            padding: 0;
+        }
+
+        .topnav a {
+            float: center;
+            color: black;
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: white;
+        }
+
+        .topnav a.active {
+            background-color: #c7aec6;
+            color: white;
+        }
+
+        .img-box {
+            display: block;
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            color: #632660;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        #datetime {
+            text-align: center;
+            font-style: normal;
+            font-size: 1.2em;
+            color: #000;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="home.html">Home</a>
+        <a href="about.html" target="_self">About me</a>
+        <a href="gallery.html" target="_self">My gallery</a>
+        <a href="love.html" target="_self">My love</a>
+
+    </div>
+
+    <!-- Timer -->
+    <div id="datetime"></div>
+
+    <div class="img-box">
+        <img src="images/me.jpg" alt="Profile Picture">
+    </div>
+
+    <div align="center">
+        <h1>𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝓂𝓎 𝓅𝑒𝓇𝓈𝑜𝓃𝒶𝓁 𝓅𝒶𝑔𝑒</h1>
+        <p>Hellooooo</p>
+    </div>
+
+    <p>
+        <div align="center">
+            <hr size="5" color="#17202a" width="90%">
+            <br>
+            <font size="3" color="#17202a" face="arial"><strong>────୨ৎ────</strong></font>
+            <br>
+            <font size="3" color="#17202a" face="arial"><strong>LET'S START TO EXPLORE, ENJOY</strong></font>
+        </div>
+    </p>
+
+    <div align="center">
+        <a href="https://www.instagram.com/sharlinrsy"><img src="images/ig.jpg" width="40px"></a>
+        <a href="https://x.com/_sharlinrsy"><img src="images/x logo.webp" width="40px"></a>
+        <a href="mailto:sharlinrsy@gmail.com"><img src="images/email logo.avif" width="40px"></a>
+    </div>
+
+    <div align="center">
+        <footer>
+            <p>@copyright sharlin`s website 2024</p>
+        </footer>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const formattedDateTime = now.toLocaleString();
+            document.getElementById("datetime").textContent = formattedDateTime;
+        }
+
+        setInterval(updateDateTime, 1000); // Update the time every second
+        updateDateTime(); // Initialize the time immediately
+    </script>
+</body>
+</html>
+ 
